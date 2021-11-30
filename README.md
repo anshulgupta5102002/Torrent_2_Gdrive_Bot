@@ -15,9 +15,6 @@ This is a telegram bot writen in python for mirroring files on the internet to o
 
 ## Deploying on Heroku
 Give Star & Fork this repo, then upload **token.pickle** & **credentials.json** to your forks
-<p><a href="https://heroku.com/deploy"> <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy to Heroku" /></a></p> 
-
-
 after this click on the below button 👇👇👇👇
 <p><a href="https://github.com/techiegamer/Torrent_2_Gdrive_Bot/blob/master/heroku-guide.md"> <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy to Heroku" /></a></p> 
 
