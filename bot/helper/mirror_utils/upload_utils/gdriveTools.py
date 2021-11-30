@@ -117,7 +117,7 @@ class GoogleDriveHelper:
                                      resumable=False)
         file_metadata = {
             'name': file_name,
-            'description': 'Uploaded using AT_BOTs Mirrorbot',
+            'description': 'Uploaded using GDrive_Mirror_Bot',
             'mimeType': mime_type,
         }
         if parent_id is not None:
@@ -171,7 +171,7 @@ class GoogleDriveHelper:
         # File body description
         file_metadata = {
             'name': file_name,
-            'description': 'Uploaded using AT_BOTs Mirrorbot',
+            'description': 'Uploaded using GDrive_Mirror_Bot',
             'mimeType': mime_type,
         }
         try:
@@ -556,9 +556,9 @@ class GoogleDriveHelper:
                     content += f'<b> | <a href="https://telegra.ph/{self.path[nxt_page]}">Next</a></b>'
                     nxt_page += 1
             Telegraph(access_token=telegraph_token).edit_page(path = self.path[prev_page],
-                                 title = 'AT_BOTs Mirror bot search',
-                                 author_name='AT_BOTs',
-                                 author_url='https://t.me/AT_BOTs',
+                                 title = 'Techie Sneh Mirror bot search',
+                                 author_name='techiesneh',
+                                 author_url='https://t.me/techiesneh',
                                  html_content=content)
         return
 
@@ -641,9 +641,9 @@ class GoogleDriveHelper:
 
             for content in self.telegraph_content :
                 self.path.append(Telegraph(access_token=telegraph_token).create_page(
-                                                        title = 'AT_BOTs Mirror bot search',
-                                                        author_name='AT_BOTs Mirrorbot',
-                                                        author_url='https://t.me/AT_BOTs',
+                                                        title = 'Techie Sneh Mirror bot search',
+                                                        author_name='GDrive_Mirror_Bot',
+                                                        author_url='https://t.me/techiesneh',
                                                         html_content=content
                                                         )['path'])
 
