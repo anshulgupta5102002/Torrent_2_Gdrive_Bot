@@ -290,9 +290,9 @@ except KeyError:
 try:
     IMAGE_URL = getConfig('IMAGE_URL')
     if len(IMAGE_URL) == 0:
-        IMAGE_URL = 'https://telegra.ph/file/019996f816db9ed576cff.jpg'
+        IMAGE_URL = 'https://ik.imagekit.io/techiesneh/favicon_x3TCVD1wWp.png'
 except KeyError:
-    IMAGE_URL = 'https://telegra.ph/file/019996f816db9ed576cff.jpg'
+    IMAGE_URL = 'https://ik.imagekit.io/techiesneh/favicon_x3TCVD1wWp.png'
 try:
     STOP_DUPLICATE = getConfig('STOP_DUPLICATE')
     if STOP_DUPLICATE.lower() == 'true':
