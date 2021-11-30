@@ -201,7 +201,7 @@ input[type="submit"]:hover, input[type="submit"]:focus{
           alt="logo"
         />
         <a href="https://t.me/techiesneh"> 
-          <h2 class="name">AT_BOTs slam mirrorbot</h2>
+          <h2 class="name">GDrive_Mirror_Bot</h2>
         </a>
       </div>
       <div class="social">
@@ -526,7 +526,7 @@ section span{
           alt="logo"
         />
         <a href="https://t.me/techiesneh">
-          <h2 class="name">AT_BOTs slam mirrorbot</h2>
+          <h2 class="name">GDrive_Mirror_Bot</h2>
         </a>
       </div>
       <div class="social">
@@ -704,7 +704,7 @@ async def set_priority(request):
 @routes.get('/')
 async def homepage(request):
 
-    return web.Response(text="<h1>See AT_BOTs slam mirrorbot <a href='https://github.com/techiegamer/Torrent_2_Gdrive_Bot'>@GitHub</a> By <a href='https://github.com/techiesneh'></a></h1>", content_type="text/html")
+    return web.Response(text="<h3>See GDrive_Mirror_Bot <a href='https://github.com/techiegamer/Torrent_2_Gdrive_Bot'>@GitHub</a> By <a href='https://github.com/techiesneh'> Techie Sneh </a></h3>", content_type="text/html")
 
 
 async def e404_middleware(app, handler):
@@ -714,11 +714,11 @@ async def e404_middleware(app, handler):
         try:
             response = await handler(request)
             if response.status == 404:
-                return web.Response(text="<h1>404: Page not found</h2><br><h3>AT_BOTs slam mirrorbot</h3>", content_type="text/html")
+                return web.Response(text="<h1>404: Page not found</h2><br><h3>GDrive_Mirror_Bot</h3>", content_type="text/html")
             return response
         except web.HTTPException as ex:
             if ex.status == 404:
-                return web.Response(text="<h1>404: Page not found</h2><br><h3>AT_BOTs slam mirrorbot</h3>", content_type="text/html")
+                return web.Response(text="<h1>404: Page not found</h2><br><h3>GDrive_Mirror_Bot</h3>", content_type="text/html")
             raise
     return middleware_handler
 
